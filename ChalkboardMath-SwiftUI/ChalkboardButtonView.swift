@@ -15,10 +15,18 @@ struct ChalkboardButtonView: View {
     @State var selected:Bool = false
 
     var body: some View {
-        
-        Button(buttonText) {
-            onClick?()
-        }.foregroundColor(.white).font(Font.custom("Chalkduster", size: fontSize))
+        ZStack {
+            if (selected) {
+            Circle()
+                .strokeBorder(Color.white, lineWidth: 2)
+                .frame(minWidth: nil, idealWidth: 40, maxWidth: 40, minHeight: 0, idealHeight: 40, maxHeight: 40, alignment: .center)
+            }
+            
+            Button(buttonText) {
+                selected.toggle()
+                onClick?()
+            }.foregroundColor(.white).font(Font.custom("Chalkduster", size: fontSize))
+        }
     }
 }
 
@@ -26,7 +34,7 @@ struct ChalkboardButtonView_Previews: PreviewProvider {
     static var previews: some View {
         ZStack {
             Image("Chalkboard").resizable()
-            ChalkboardButtonView(buttonText: "1")
+            ChalkboardButtonView(buttonText: "1", selected: true)
         }.previewLayout(.fixed(width: 150, height: 150))
         
         ZStack {
