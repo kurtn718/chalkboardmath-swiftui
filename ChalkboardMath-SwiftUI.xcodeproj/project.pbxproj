@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		953FC5AC253A6B4E005CDCE3 /* MathGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953FC5AB253A6B4E005CDCE3 /* MathGameModel.swift */; };
+		953FC5AF253A6E60005CDCE3 /* ChalkboardButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953FC5AE253A6E60005CDCE3 /* ChalkboardButtonView.swift */; };
 		957A095F253696A000D5A3D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957A095E253696A000D5A3D9 /* AppDelegate.swift */; };
 		957A0961253696A000D5A3D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957A0960253696A000D5A3D9 /* SceneDelegate.swift */; };
 		957A0963253696A000D5A3D9 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957A0962253696A000D5A3D9 /* MainView.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		953FC5AB253A6B4E005CDCE3 /* MathGameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathGameModel.swift; sourceTree = "<group>"; };
+		953FC5AE253A6E60005CDCE3 /* ChalkboardButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChalkboardButtonView.swift; sourceTree = "<group>"; };
 		957A095B253696A000D5A3D9 /* ChalkboardMath-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ChalkboardMath-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		957A095E253696A000D5A3D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		957A0960253696A000D5A3D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				957A095E253696A000D5A3D9 /* AppDelegate.swift */,
 				957A0960253696A000D5A3D9 /* SceneDelegate.swift */,
 				957A0962253696A000D5A3D9 /* MainView.swift */,
+				953FC5AE253A6E60005CDCE3 /* ChalkboardButtonView.swift */,
 				953FC5AB253A6B4E005CDCE3 /* MathGameModel.swift */,
 				957A0964253696A200D5A3D9 /* Assets.xcassets */,
 				957A0969253696A200D5A3D9 /* LaunchScreen.storyboard */,
@@ -148,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				953FC5AF253A6E60005CDCE3 /* ChalkboardButtonView.swift in Sources */,
 				957A095F253696A000D5A3D9 /* AppDelegate.swift in Sources */,
 				957A0961253696A000D5A3D9 /* SceneDelegate.swift in Sources */,
 				957A0963253696A000D5A3D9 /* MainView.swift in Sources */,
