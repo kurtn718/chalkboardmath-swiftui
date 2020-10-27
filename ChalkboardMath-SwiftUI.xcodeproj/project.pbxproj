@@ -28,6 +28,7 @@
 		957A0967253696A200D5A3D9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		957A096A253696A200D5A3D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		957A096C253696A200D5A3D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95E3CDA52547B1AB002A1614 /* ChalkboardMath-SwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "ChalkboardMath-SwiftUI.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +61,7 @@
 		957A095D253696A000D5A3D9 /* ChalkboardMath-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				95E3CDA52547B1AB002A1614 /* ChalkboardMath-SwiftUI.entitlements */,
 				957A095E253696A000D5A3D9 /* AppDelegate.swift */,
 				957A0960253696A000D5A3D9 /* SceneDelegate.swift */,
 				957A0962253696A000D5A3D9 /* MainView.swift */,
@@ -294,17 +296,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "ChalkboardMath-SwiftUI/ChalkboardMath-SwiftUI.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ChalkboardMath-SwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = 883PVXPFA8;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "ChalkboardMath-SwiftUI/Info.plist";
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kurtniemi.ChalkboardMath-SwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -315,17 +320,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "ChalkboardMath-SwiftUI/ChalkboardMath-SwiftUI.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ChalkboardMath-SwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = 883PVXPFA8;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "ChalkboardMath-SwiftUI/Info.plist";
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kurtniemi.ChalkboardMath-SwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

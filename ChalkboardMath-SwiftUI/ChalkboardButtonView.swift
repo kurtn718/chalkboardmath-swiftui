@@ -32,6 +32,7 @@ struct ChalkboardButtonView: View {
 
 struct ChalkboardButtonView_Previews: PreviewProvider {
     static var previews: some View {
+        Group {
         ZStack {
             Image("Chalkboard").resizable()
             ChalkboardButtonView(buttonText: "1", selected: true)
@@ -42,5 +43,6 @@ struct ChalkboardButtonView_Previews: PreviewProvider {
             ChalkboardButtonView(buttonText: "1")
         }.preferredColorScheme(.dark).previewLayout(.fixed(width: 150, height: 150))
 
+    }
     }
 }
