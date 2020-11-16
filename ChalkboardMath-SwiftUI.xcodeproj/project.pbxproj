@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		59A5B6C425622BB000668FFD /* SpeechSynthesis.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A5B6C225622BB000668FFD /* SpeechSynthesis.m */; };
+		59A5B6D02562320D00668FFD /* audio in Resources */ = {isa = PBXBuildFile; fileRef = 59A5B6CF2562320D00668FFD /* audio */; };
 		953FC5AC253A6B4E005CDCE3 /* MathGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953FC5AB253A6B4E005CDCE3 /* MathGameModel.swift */; };
 		953FC5AF253A6E60005CDCE3 /* ChalkboardButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953FC5AE253A6E60005CDCE3 /* ChalkboardButtonView.swift */; };
 		957A095F253696A000D5A3D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957A095E253696A000D5A3D9 /* AppDelegate.swift */; };
@@ -18,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		59A5B6C125622BAF00668FFD /* ChalkboardMath-SwiftUI-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChalkboardMath-SwiftUI-Bridging-Header.h"; sourceTree = "<group>"; };
+		59A5B6C225622BB000668FFD /* SpeechSynthesis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeechSynthesis.m; sourceTree = "<group>"; };
+		59A5B6C325622BB000668FFD /* SpeechSynthesis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeechSynthesis.h; sourceTree = "<group>"; };
+		59A5B6CF2562320D00668FFD /* audio */ = {isa = PBXFileReference; lastKnownFileType = folder; path = audio; sourceTree = "<group>"; };
 		953FC5AB253A6B4E005CDCE3 /* MathGameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathGameModel.swift; sourceTree = "<group>"; };
 		953FC5AE253A6E60005CDCE3 /* ChalkboardButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChalkboardButtonView.swift; sourceTree = "<group>"; };
 		957A095B253696A000D5A3D9 /* ChalkboardMath-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ChalkboardMath-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +48,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		59A5B6C025622B6A00668FFD /* Speech */ = {
+			isa = PBXGroup;
+			children = (
+				59A5B6C325622BB000668FFD /* SpeechSynthesis.h */,
+				59A5B6C225622BB000668FFD /* SpeechSynthesis.m */,
+				59A5B6C125622BAF00668FFD /* ChalkboardMath-SwiftUI-Bridging-Header.h */,
+				59A5B6CF2562320D00668FFD /* audio */,
+			);
+			path = Speech;
+			sourceTree = "<group>";
+		};
 		957A0952253696A000D5A3D9 = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +78,7 @@
 		957A095D253696A000D5A3D9 /* ChalkboardMath-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				59A5B6C025622B6A00668FFD /* Speech */,
 				95E3CDA52547B1AB002A1614 /* ChalkboardMath-SwiftUI.entitlements */,
 				957A095E253696A000D5A3D9 /* AppDelegate.swift */,
 				957A0960253696A000D5A3D9 /* SceneDelegate.swift */,
@@ -114,6 +132,7 @@
 				TargetAttributes = {
 					957A095A253696A000D5A3D9 = {
 						CreatedOnToolsVersion = 12.0.1;
+						LastSwiftMigration = 1220;
 					};
 				};
 			};
@@ -143,6 +162,7 @@
 				957A096B253696A200D5A3D9 /* LaunchScreen.storyboard in Resources */,
 				957A0968253696A200D5A3D9 /* Preview Assets.xcassets in Resources */,
 				957A0965253696A200D5A3D9 /* Assets.xcassets in Resources */,
+				59A5B6D02562320D00668FFD /* audio in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +175,7 @@
 			files = (
 				953FC5AF253A6E60005CDCE3 /* ChalkboardButtonView.swift in Sources */,
 				957A095F253696A000D5A3D9 /* AppDelegate.swift in Sources */,
+				59A5B6C425622BB000668FFD /* SpeechSynthesis.m in Sources */,
 				957A0961253696A000D5A3D9 /* SceneDelegate.swift in Sources */,
 				957A0963253696A000D5A3D9 /* MainView.swift in Sources */,
 				953FC5AC253A6B4E005CDCE3 /* MathGameModel.swift in Sources */,
@@ -296,6 +317,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "ChalkboardMath-SwiftUI/ChalkboardMath-SwiftUI.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ChalkboardMath-SwiftUI/Preview Content\"";
@@ -310,6 +332,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kurtniemi.ChalkboardMath-SwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ChalkboardMath-SwiftUI/Speech/ChalkboardMath-SwiftUI-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -320,6 +344,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "ChalkboardMath-SwiftUI/ChalkboardMath-SwiftUI.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ChalkboardMath-SwiftUI/Preview Content\"";
@@ -334,6 +359,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kurtniemi.ChalkboardMath-SwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ChalkboardMath-SwiftUI/Speech/ChalkboardMath-SwiftUI-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
