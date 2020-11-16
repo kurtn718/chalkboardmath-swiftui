@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct MathGameModel {
+class MathGameModel: ObservableObject {
     var selectedNumbers: Set<Int> = Set<Int>()
     var flashcardMode:Bool = false
     var playChalkman:Bool = false

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MainView: View {
-    @State var model:MathGameModel = MathGameModel()
+    @StateObject var model:MathGameModel = MathGameModel()
     
     var body: some View {
         ZStack {
